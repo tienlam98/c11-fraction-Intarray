@@ -25,7 +25,7 @@ class IntArray {
         return this.#name;
     }
     getElement (index) {
-        return this.#array[2*index+1];
+        return this.#array[index];
     }
     getSize() {
         let count = 0;
@@ -41,8 +41,8 @@ class IntArray {
 function chayIntArray() {
     let arr = new IntArray([2,3], `abc`);
     // console.log(arr);
-    arr.input();
-    let b = arr.getElement(1);
+    // arr.input();
+    let b = arr.getElement(0);
     console.log(`Phan tu o vi tri la: ${b}`);
     // console.log(`so luong phan tu trong mang la ${arr.getSize()}`);
     // arr.printArr();
